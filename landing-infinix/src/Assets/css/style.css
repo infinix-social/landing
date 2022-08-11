@@ -10,38 +10,40 @@ ul{
 }
 /*Background*/
 .Background{
+    position: absolute;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items:center;
-}
-.Elipse{
-    width: 290px;
-    height: 290px;
-    position: relative;
-    left: 540px;
-    top: 397px;
     filter: blur(231px);
-    background-image: url(../images/Ellipse.png);
 }
-.Elipse1{
-    width: 990px;
-    height: 946px;
-    position: relative;
-    top: -723px;
-    left: -431px;
-    filter: blur(231px);
-    background-image: url(http://localhost:3000/static/media/EllipseaNaranja.3d2d01e398e7af6ae275.svg);
+.Elipse {
+    position: absolute;
+    width: 227.82px;
+    height: 722.86px;
+    left: 574.66px;
+    top: 281.43px;
+    background: #9C51B6;
+    transform: matrix(0.32, 0.94, -0.96, 0.3, 0, 0);
 }
-.Elipse2{
+.Elipse1 {
+    position: absolute;
+    width: 875.5px;
+    height: 965.72px;
+    left: -152.2px;
+    top: -520px;
+    background: #FF9F00;
+    transform: matrix(-0.97, -0.03, 0.25, 1, 0, 0);
+}
+
+/* .Elipse2{
     width: 696px;
     height: 304px;
     position: relative;
     top: -961px;
     left: 104px;
-    filter: blur(231px);
     background-image: url(../images/EllipseVioleta.svg);
-}
+} */
 
 /*NavBar*/
 .NavBar-header{
