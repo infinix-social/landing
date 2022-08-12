@@ -1,11 +1,18 @@
+/* $primary-color: red;
+$primary-fontl
+@mixin position-center-flex {
+  position: absolute;
+  display: flex;
+  justify-content: cente
+} */
+
 .App {
   width: 1440px;
   position: absolute;
   display: flex;
   justify-content: center;
+  /* color: $primary-color; */
 }
-
-
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
