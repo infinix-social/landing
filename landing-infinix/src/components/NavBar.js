@@ -9,10 +9,10 @@ class NavBar extends React.Component{
                 </div>
                 <div className="NavBar-nav">
                     <ul>
-                        <li className="textMenu">HOME</li>
-                        <li className="textMenu">SOLUTION</li>
-                        <li className="textMenu">HOW WE CREATE</li>
-                        <li className="textMenu">CONTACT</li>
+                        <li ><a className="textMenu" href="#">HOME</a></li>
+                        <li ><a className="textMenu" href="#">SOLUTION</a></li>
+                        <li ><a className="textMenu" href="#">HOW WE CREATE</a></li>
+                        <li ><a className="textMenu" href="#">CONTACT</a></li>
                     </ul>
                 </div>
             </section>

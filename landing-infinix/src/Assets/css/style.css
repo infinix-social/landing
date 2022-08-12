@@ -8,11 +8,16 @@ li{
 ul{
     display: flex;
 }
+a{
+    text-decoration: none;
+}
 /*Background*/
 .Background{
     position: absolute;
     text-align: center;
     display: flex;
+    width: 100%;
+    height: 20px;
     flex-direction: column;
     align-items:center;
     filter: blur(231px);
@@ -32,7 +37,7 @@ ul{
     height: 965.72px;
     left: -152.2px;
     top: -520px;
-    background: #FF9F00;
+    background: rgb(255, 131, 15);
     transform: matrix(-0.97, -0.03, 0.25, 1, 0, 0);
 }
 
@@ -62,9 +67,11 @@ ul{
     background-image: url(../images/logoInfinix.svg);
     background-size: cover;
     background-position: center;
+    position: relative;
+    right: 70px;
 }
 .NavBar-nav{
-    margin-right: 50px;
+    margin-right: 13px;
 }
 .navBar-logoInfinix{
     width: 100%;
@@ -73,13 +80,130 @@ ul{
 }
 .textMenu{
     color: #575E89;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.8px;
+    line-height: 20px;
+    text-align: center;
+}
+.textMenu:hover{
+    font-weight: 800;
+
 }
 
 /*Main*/
 .Main{
     position:absolute;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    height: 809px;
+    margin-top: 95px;/*Provisorio*/
 }
-.title h2{
-    color: black;
+
+.Titulo{
+    width: 580px;
+    padding-left: 50px;
+    height: 809px;   
+}
+
+.Titulo h1{
+    margin-top: 120px;
+    color: rgb(255, 255, 255);
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 113.032px;
+    line-height: 100.4%;
+}
+.Titulo h3{
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 24px;
+    line-height: 32px;
+    position: relative;
+    top: -55px;
+    left: 12px;
+}
+.Titulo span{
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 30.24px;
+}
+
+.Composition{
+    width: 670px;
+    height: 809px;
+}
+.Composition img{
+    position: absolute;
+
+}
+.estatua{
+    width: 540px;
+    top: 60px;
+    left: 797px;
+}
+
+.fondo{
+    width: 385px;
+    top: 90px;
+    left: 855px;
+}
+
+.marmol4{
+    width: 340px;
+    top: 30px;
+    left: 970px;
+
+}
+.marmol3{
+    width: 200px;
+    top: 600px;
+    left: 1100px;
+
+}
+.marmol2{
+    width: 250px;
+    top: 30px;
+    left: 690px;
+}
+.marmol1{
+    width: 190px;
+    top: 250px;
+    left: 630px;
+
+}
+.circulo{
+    width: 450px;
+    top: 450px;
+    left: 600px;
+}
+
+.star{
+    color: red;
+    padding: 0 3px 0 3px;
+}
+.Service{
+    position: absolute;
+    top: 352px;
+    left: 898px;
+    transform: rotate(90deg);
+    height: 138px;
+}
+.containService{
+    width: 809px;
+    height: 138px;
+}
+.containService h2{
+    color: #575E89;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.8px;
+    line-height: 20px;
 }
