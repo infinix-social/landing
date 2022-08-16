@@ -8,6 +8,10 @@ class Background extends React.Component{
                 <div className='Elipse'></div>
                 <div className='Elipse1'></div>
                 <div className='Elipse2'></div>
+                <div className='Elipse3'></div>
+                <div className='Elipse4'></div>
+                <div className='Elipse8'></div>
+
             </section>
         )
     }

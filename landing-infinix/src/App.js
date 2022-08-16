@@ -3,6 +3,8 @@ import '../src/Assets/css/App.css';
 import NavBar from './components/NavBar';
 import Background from './components/Background';
 import Main from './components/Main';
+import Solutions from './components/Solutions';
+import Create from './components/Create';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <header className="App-header">
         <NavBar/>
         <Main/>
+        <Create/>
+        <Solutions/>
       </header>
     </div>
   );

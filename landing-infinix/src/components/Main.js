@@ -22,18 +22,17 @@ class Main extends React.Component{
                 
                 <div className="Composition">
                     <img className="fondo " src={Fondo}></img>
-                    <img className="marmol4 images2" src={Marmol4}></img>
-                    <img className="circulo images" src={Circulo}></img>
-                    <img className="marmol3 images2" src={Marmol3}></img>
-                    <img className="marmol2 images" src={Marmol2}></img>
-                    <img className="marmol1 images2" src={Marmol1}></img>
-                    <img className="estatua images" src={Estatua}></img>
+                    <img className="marmol4 images2 App-logo" src={Marmol4}></img>
+                    <img className="circulo images " src={Circulo}></img>
+                    <img className="marmol3 images2 App-logo" src={Marmol3}></img>
+                    <img className="marmol2 images " src={Marmol2}></img>
+                    <img className="marmol1 images2 App-logo" src={Marmol1}></img>
+                    <img className="estatua images " src={Estatua}></img>
                 </div>
 
                 <div className="Service">
                     <div className="containService">
-                        <h2>DESIGN AND SOCIAL <img className="star" src={Star}></img> DIGITAL MARKETING <img className="star" src={Star}></img> SOCIAL MEDIA <img className="star" src={Star}></img> WEB DEVELOPMENT</h2>
-
+                        <h2><a href="#">DESIGN AND SOCIAL</a><img className="star" src={Star}></img><a href="#">DIGITAL MARKETING</a> <img className="star" src={Star}></img><a href="#">SOCIAL MEDIA</a><img className="star" src={Star}></img><a href="#">WEB DEVELOPMENT</a></h2>
                     </div>
                 </div>
             </div>            
