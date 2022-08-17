@@ -25,6 +25,7 @@ a:hover{
     flex-direction: column;
     align-items:center;
     filter: blur(190px);
+    
 }
 .Elipse {
     position: absolute;
@@ -75,30 +76,29 @@ a:hover{
 }
 .Elipse5 {
     position: absolute;
-    width:  315.5px;
-    height: 258.72px;
-    left: 220.8px;
-    top: -26px;
+    width:  574.5px;
+    height: 395.72px;
+    left: 80.80000000000001px;
+    top: -171px;
     background: rgb(255, 131, 15);
     transform: matrix(-0.97, -0.03, 0.25, 1, 0, 0);
 }
 
 .Elipse6 {
     position: absolute;
-    width: 270.82px;
-    height: 568.86px;
-    left: 475.65999999999997px;
-    top: -14.569999999999936px;
-
+    width: 476.82px;
+    height: 790.86px;
+    left: 320.65999999999997px;
+    top: 55.430000000000064px;
     background: #9C51B6;
     transform: matrix(0.32, 0.94, -0.96, 0.3, 0, 0);
 }
 .Elipse7 {
     position: absolute;
-    width: 308.5px;
-    height: 222.72000000000003px;
-    left: 774.8px;
-    top: 311px;
+    width: 945.5px;
+    height: 287.72px;
+    left: 903.8px;
+    top: 450px;
     background: rgb(255, 131, 15);
     transform: matrix(-0.97, -0.03, 0.25, 1, 0, 0);
 }
@@ -109,6 +109,15 @@ a:hover{
     left: 1168px;
     top: 1268.43px;
     background: rgb(255, 131, 15);
+    transform: matrix(0.32, 0.94, -0.96, 0.3, 0, 0);
+}
+.Elipse9 {
+    position: absolute;
+    width:  476.82px;
+    height: 691.86px;
+    left: 1101.6599999999999px;
+    top: -380.56999999999994px;
+    background: #9C51B6;
     transform: matrix(0.32, 0.94, -0.96, 0.3, 0, 0);
 }
 /* .Elipse2{
@@ -367,7 +376,8 @@ a:hover{
 /*CREATE*/
 .CreateBackground{
 
-    width: 1440px;
+    width: 1800px;
+
     height: 809px;
     margin-top: 1640px;/*Provisorio*/
     position: absolute;
@@ -379,13 +389,14 @@ a:hover{
     top: -729px;
 }
 .Create{
-    position:relative;
+    position:absolute;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1865px;
     height: 809px;
-    margin-top: 1640px;/*Provisorio*/
+    margin-top: 1726px;/*Provisorio*/
     background-color: white;
 }
 .Create_title{
@@ -419,4 +430,54 @@ a:hover{
 }
 .line{
     margin-top: 100px;
+}
+
+/*CARD RESPONSIVE*/
+.CardRes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2px 31px;
+    gap: 12px;
+    position: relative;
+    max-width: 574px;
+    min-width: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    /* Card Stroke */
+    border: 3.6899px solid rgba(255, 255, 255, 0.33);
+    backdrop-filter: blur(74px) ;
+    /* Note: backdrop-filter has minimal browser support */
+    max-height: 300px;
+    border-radius: 46.97px;
+}
+
+.CardRes_title{
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41.47px;
+    line-height: 52px;
+    color: #FAFBFB;
+    margin-block-end: 0 !important;
+}
+
+.Roadmap{
+    width: 1526px;
+    height: 3048px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    margin-top: 684px;
+
+}
+.CardRes h3{
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 19.1506px;
+    line-height: 24px;
 }
