@@ -5,6 +5,10 @@ import Background from './components/Background';
 import Main from './components/Main';
 import Solutions from './components/Solutions';
 import Create from './components/Create';
+import Partners from './components/Partners';
+import Speak from './components/Speak';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
@@ -15,9 +19,11 @@ function App() {
         <Main/>
         <Create/>
         <Solutions/>
+        <Partners/>
+        <Speak/>
+        <Footer/>
       </header>
     </div>
   );
 }
-
 export default App;
