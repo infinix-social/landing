@@ -119,6 +119,24 @@ a:hover{
     background: #9C51B6;
     transform: matrix(0.32, 0.94, -0.96, 0.3, 0, 0);
 }
+.Elipse10 {
+    position: absolute;
+    width: 218.81999999999994px;
+    height: 690.86px;
+    left: 1243.6599999999999px;
+    top: 3537px;
+    background: #9C51B6;
+    transform: matrix(0.32, 0.94, -0.96, 0.3, 0, 0);
+}
+.Elipse11 {
+    position: absolute;
+    width: 896.5px;
+    height: 81.72000000000003px;
+    left: -153.20000000000005px;
+    top: 3867px;
+    background: rgb(255, 131, 15);
+    transform: matrix(-0.97, -0.03, 0.25, 1, 0, 0);
+}
 /* .Elipse2{
     width: 696px;
     height: 304px;
@@ -169,7 +187,9 @@ a:hover{
 .textMenu:hover{
     color: #364393;
 }
-
+.Titulo span{
+    color: white !important;
+}
 /*Main*/
 .Main{
     position:absolute;
@@ -363,6 +383,9 @@ a:hover{
     margin-block-start: 0;
 }
 
+.Solutions_title span{
+    color: white !important;
+}
 .mobile{
     position: relative;
     right: 50px;
@@ -370,6 +393,7 @@ a:hover{
     top:25px;
     transform: rotateZ(-0.1deg);
 }
+
 /*CREATE*/
 .CreateBackground{
     width: 100%;
@@ -487,6 +511,7 @@ a:hover{
 /*Partners*/
 .Partners{
     display: flex;
+    position: absolute;
     height: 172.98px;
     gap: 12rem;
     margin-top: 3620px;/*Provisorio*/
@@ -539,9 +564,11 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 172.98px;
+    position: absolute;
     gap: 12rem;
-    margin-top: 100px;
+    margin-top: 4020px;
+
+
 }
 .Speak_title{
     display: flex;
@@ -567,14 +594,26 @@ a:hover{
     text-align: center;
     letter-spacing: 0.02em;
 }
-.Speak_background svg{
-    height: 414.6px;
-    fill: rgb(105, 105, 105) !important;
+.Speak_background{
+    width: 100%;
+    height: 809px;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    flex-direction: column;
+    align-items:center;
+    top: 1130px;
 }
+
 .Speak_background path{
-    box-shadow: 4px 106px 50px -76px rgba(0,0,0,0.61) inset;
-    -webkit-box-shadow: 4px 106px 50px -76px rgba(0,0,0,0.61) inset;
-    -moz-box-shadow: 4px 106px 50px -76px rgba(0,0,0,0.61) inset;
+    fill: white;
+    /*    filter: drop-shadow(-18px 35px 40px rgb(0 0 0 / 0.2));*/
+}
+
+.Speak_background svg{
+    height: 1637px;
+    position: absolute;
+    transform: rotate(180deg);
 }
 /*Footer*/
 .Footer{
@@ -584,12 +623,13 @@ a:hover{
     height: 172.98px;
     width: 100%;
     gap: 12rem;
-    margin-top: 1000px;
+    background-color: white;
+    position: absolute;
+    margin-top: 4420px;/*Provisorio*/
 }
 .links{
     display: flex;
     justify-content: space-between;
-
 }
 .Footer_links{
     display: flex;
