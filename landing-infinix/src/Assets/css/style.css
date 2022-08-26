@@ -607,12 +607,43 @@ a:hover{
 .line{
     margin-top: 100px;
 }
+.line1{
+    margin-top: 280px;
+    display: none;
+}
+.line2{
+    margin-top: 250px;
+    display: none;
+}
+.line3{
+    margin-top: 100px;
+    display: none;
+}
+@media all and (max-width: 1348px){
+    .line{
+        display: none;
+    }
+    .line1{
+        display: block;
+    }
+}
+@media all and (max-width: 1188px){
+    .line1{
+        display: none;
+    }
+    .line2{
+        display: block;
+    }
+}
 @media all and (max-width: 1275px){
+    .line1{
+        margin-top: 275px;
+    }
     .Create{
         margin-top: 1950px;
     }
     .Create_title{
-        top: 207px;
+        top: 300px;
     }
     .Create_title h1{
         font-size: 80px;
@@ -628,6 +659,13 @@ a:hover{
 }
 
 @media all and (max-width: 836px){
+    .line2{
+        display: none;
+    }
+    .line3{
+        display: block;
+
+    }
     .Create{
         margin-top: 2100px;
     }
@@ -638,14 +676,14 @@ a:hover{
         top: 207px;
     }
     .Create_title h1{
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 52px;
+        line-height: 61px;
     }
     .Create_title h3{
-        font-size: 10px;
+        font-size: 16px;
     }
     .Create_title span{
-        font-size: 10px;
+        font-size: 16px;
     }
 }
 /*CARD RESPONSIVE*/
@@ -654,7 +692,7 @@ a:hover{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 2px 31px;
+    padding: 10px  31px;
     gap: 12px;
     position: relative;
     max-width: 574px;
@@ -674,6 +712,7 @@ a:hover{
     font-weight: 800;
     font-size: 41.47px;
     line-height: 52px;
+    margin-block-start: 0px;
     color: #FAFBFB;
     margin-block-end: 0 !important;
 }
@@ -697,14 +736,28 @@ a:hover{
     line-height: 24px;
 }
 
-@media all and (max-width: 1347px){
+@media all and (max-width: 1348px){
     .CardRes{
         top: 0px !important ;
+        max-width: 300px;
+    }
+    .Roadmap{
+        margin-top: 320px;
     }
 }
-
+@media all and (max-width: 1188px){
+    .Roadmap{
+        margin-top: 650px;
+    }
+}
 @media all and (max-width: 836px){
-
+    .Roadmap{
+        margin-top: 450px;
+    }
+    .CardRes{
+        top: 0px !important ;
+        max-width: 330px;
+    }
 }
 
 
@@ -712,10 +765,13 @@ a:hover{
 .Partners{
     display: flex;
     position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
     height: 172.98px;
     gap: 12rem;
-    margin-top: 3620px;/*Provisorio*/
-    justify-content: space-between;
+    margin-top: 3220px;/*Provisorio*/
 
 }
 .Partners_title{
@@ -759,14 +815,51 @@ a:hover{
     width: 70.47px;
     height: 70.47px;
 }
+
+@media all and (max-width: 1275px){
+    .Partners{
+            margin-top: 3600px;
+    }
+}
+
+@media all and (max-width: 1014px){
+    .Partners{
+        gap: 0;
+        margin-top: 3850px;/*Provisorio*/
+    
+    }
+}
+@media all and (max-width: 836px){
+    .Partners{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        margin-top: 4550px;/*Provisorio*/
+    }
+
+    .Partners h1{
+        font-size: 60px;
+    }
+    .Partners h3{
+        font-size: 17px;
+    }
+    .Partners span{
+        font-size: 17px;
+    }
+}
 /*SPEAK*/
 .Speak{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
     gap: 12rem;
-    margin-top: 4020px;
+    margin-top: 3720px;
 
 
 }
@@ -815,25 +908,48 @@ a:hover{
     position: fixed;
     transform: rotate(180deg);
 }
+
+@media all and (max-width: 1275px){
+    .Speak{
+        gap: 0;
+        margin-top: 4300px;/*Provisorio*/
+    }
+}
+@media all and (max-width: 836px){
+    .Speak{
+        margin-top: 5000px;/*Provisorio*/
+    }
+    .Speak_title h1{
+        font-size: 40px;
+    }
+    .Speak_title h3{
+
+        font-size: 16px;
+    }
+}
 /*Footer*/
 .Footer{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 172.98px;
+    justify-content: space-around;
+    align-content: center;
+    gap: 78px;
     width: 100%;
-    gap: 12rem;
+    padding-top: 67px;
+    padding-bottom:48px;
     background-color: white;
     position: absolute;
-    margin-top: 4420px;/*Provisorio*/
+    margin-top: 4200px;/*Provisorio*/
+    
 }
 .links{
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .Footer_links{
     display: flex;
-    width: 845px;
+    width: 100%;
     justify-content: space-around;
 }
 .Footer_link1{
@@ -863,14 +979,13 @@ a:hover{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    width: 15rem;
+    width: 100%;
     gap: 30px;
 }
 .copy{
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding-left: 108px;
+    align-items: center;
+    justify-content: center;
 }
 .copy h3, span{
     color: #575E89;
@@ -901,4 +1016,35 @@ a:hover{
 .menu button{
     background: #ffffff00;
     border: none;
+}
+
+@media all and (max-width: 1275px){
+    .links{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Footer_social  img{
+        width: 30px ;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+}
+@media all and (max-width: 1014px){
+
+}
+@media all and (max-width: 836px){
+    .Footer{
+        margin-top: 5250px;
+    }
+    .links{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Footer_links h3{
+        font-size: 14px;
+    }
+    .Footer_links span{
+        font-size: 14px;
+    }
 }

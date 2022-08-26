@@ -1,6 +1,9 @@
 import React from "react";
 import "../Assets/css/style.css"; 
 import Line from "../Assets/images/line.svg";
+import Line1 from "../Assets/images/line1.svg";
+import Line2 from "../Assets/images/line2.svg";
+import Line3 from "../Assets/images/line3.svg";
 import CardRes from '../components/CardRes';
 
 class Create extends React.Component{
@@ -23,6 +26,9 @@ class Create extends React.Component{
                     <h1>HOW WE CREATE<br/> MASTERPIECES</h1>
                     <h3 className="textLight"> <span className="textBold"> Step by step</span>, from nowhere to create<span className="textBold"> Inifinix</span></h3>
                     <img className="line" src={Line}></img>
+                    <img className="line1" src={Line1}></img>
+                    <img className="line2" src={Line2}></img>
+                    <img className="line3" src={Line3}></img>
                 </div>
                 <div className="Roadmap">
                     <CardRes 
