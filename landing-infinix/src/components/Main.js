@@ -13,15 +13,13 @@ class Main extends React.Component{
         return(
             
             <div className="Main">
-
-                <div className="Titulo">
-                        <h1>SOCIAL+<br/>MKTNG +<br/>CODE </h1>
-                        <h3>Empower your brand<span> with powerfull</span><br/>Social / Media Partner</h3>
-                    <div className='button'></div>
+                <div className="Service">
+                    <div className="containService">
+                        <h2><a href="#">DESIGN AND SOCIAL</a><img className="star" src={Star}></img><a href="#">DIGITAL MARKETING</a> <img className="star" src={Star}></img><a href="#">SOCIAL MEDIA</a><img className="star" src={Star}></img><a href="#">WEB DEVELOPMENT</a></h2>
+                    </div>
                 </div>
-                
                 <div className="Composition">
-                    <img className="fondo " src={Fondo}></img>
+                    <img className="fondo" src={Fondo}></img>
                     <img className="marmol4 images2 App-logo" src={Marmol4}></img>
                     <img className="circulo images " src={Circulo}></img>
                     <img className="marmol3 images2 App-logo" src={Marmol3}></img>
@@ -29,12 +27,12 @@ class Main extends React.Component{
                     <img className="marmol1 images2 App-logo" src={Marmol1}></img>
                     <img className="estatua images " src={Estatua}></img>
                 </div>
-
-                <div className="Service">
-                    <div className="containService">
-                        <h2><a href="#">DESIGN AND SOCIAL</a><img className="star" src={Star}></img><a href="#">DIGITAL MARKETING</a> <img className="star" src={Star}></img><a href="#">SOCIAL MEDIA</a><img className="star" src={Star}></img><a href="#">WEB DEVELOPMENT</a></h2>
-                    </div>
+                <div className="Titulo">
+                    <h1>SOCIAL+<br/>MKTNG+<br/>CODE</h1>
+                    <h3>Empower your brand<span> with powerfull</span><br/>Social / Media Partner</h3>
+                <div className='button'></div>
                 </div>
+
             </div>            
         )
     }

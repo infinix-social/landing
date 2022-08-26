@@ -1,7 +1,11 @@
+html{
+    background-color: #ffc1c1c6; /*Auxiliar*/
+}
 li{
     list-style: none;
-    margin: 10px 20px 0 20px;
+    margin: 10px 0px 0 20px;
     font-size: 15.8;
+    margin: 0px 0px 0 25px;
 }
 
 ul{
@@ -16,39 +20,47 @@ a:hover{
 }
 /*Background*/
 .Background{
-    position: absolute;
-    text-align: center;
     display: flex;
-    width: 100%;
-    height: 20px;
-    flex-direction: column;
     align-items:center;
+    flex-direction: column;
+    position: fixed;
+    text-align: center;
+    width: 100%;
     filter: blur(190px);
-    
 }
+
+.Background div{
+    position: absolute;
+}
+
 .Elipse {
     position: absolute;
+
     width: 227.82px;
     height: 722.86px;
-    left: 574.66px;
+    left: 398px;
     top: 281.43px;
     background: #9C51B6;
     transform: matrix(0.32, 0.94, -0.96, 0.3, 0, 0);
 }
+
 .Elipse1 {
     position: absolute;
+
     width: 875.5px;
     height: 965.72px;
-    left: -152.2px;
+    left: -694.2px;
     top: -520px;
     background: rgb(255, 131, 15);
     transform: matrix(-0.97, -0.03, 0.25, 1, 0, 0);
 }
+
 .Elipse2 {
     position: absolute;
+
     width: 406.82px;
     height: 722.86px;
-    left: 574.66px;
+    left: -750px;
     top: 1097.43px;
     background: #8251b6;
     transform: matrix(0.32, 0.94, -0.96, 0.3, 0, 0);
@@ -56,9 +68,10 @@ a:hover{
 
 .Elipse3 {
     position: absolute;
+
     width: 227.82px;
     height: 722.86px;
-    left: 40.65999999999997px;
+    left: -1254px;
     top: 1268.43px;
     background: rgb(255, 131, 15);
     transform: matrix(0.32, 0.94, -0.96, 0.3, 0, 0);
@@ -66,6 +79,7 @@ a:hover{
 
 .Elipse4 {
     position: absolute;
+
     width:  342.5px;
     height: 368.72px;
     left: 68.80000000000001px;
@@ -75,6 +89,7 @@ a:hover{
 }
 .Elipse5 {
     position: absolute;
+
     width:  574.5px;
     height: 395.72px;
     left: 80.80000000000001px;
@@ -85,6 +100,7 @@ a:hover{
 
 .Elipse6 {
     position: absolute;
+
     width: 476.82px;
     height: 790.86px;
     left: 320.65999999999997px;
@@ -94,6 +110,7 @@ a:hover{
 }
 .Elipse7 {
     position: absolute;
+
     width: 945.5px;
     height: 287.72px;
     left: 855.8px;
@@ -103,15 +120,17 @@ a:hover{
 }
 .Elipse8 {
     position: absolute;
+
     width: 227.82px;
     height: 722.86px;
-    left: 1168px;
+    left: -194px;
     top: 1268.43px;
     background: rgb(255, 131, 15);
     transform: matrix(0.32, 0.94, -0.96, 0.3, 0, 0);
 }
 .Elipse9 {
     position: absolute;
+
     width:  476.82px;
     height: 691.86px;
     left: 1101.6599999999999px;
@@ -121,15 +140,17 @@ a:hover{
 }
 .Elipse10 {
     position: absolute;
+
     width: 218.81999999999994px;
     height: 690.86px;
-    left: 1243.6599999999999px;
+    left: 1043.69px;
     top: 3537px;
     background: #9C51B6;
     transform: matrix(0.32, 0.94, -0.96, 0.3, 0, 0);
 }
 .Elipse11 {
     position: absolute;
+
     width: 896.5px;
     height: 81.72000000000003px;
     left: -153.20000000000005px;
@@ -137,43 +158,59 @@ a:hover{
     background: rgb(255, 131, 15);
     transform: matrix(-0.97, -0.03, 0.25, 1, 0, 0);
 }
-/* .Elipse2{
-    width: 696px;
-    height: 304px;
-    position: relative;
-    top: -961px;
-    left: 104px;
-    background-image: url(../images/EllipseVioleta.svg);
-} */
 
 /*NavBar*/
 .NavBar-header{
-    width: 1250px;
-    height: 76px;
-    top: 12px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: inherit;
+    align-items: center;
     justify-content: space-between;
+    padding: 1rem 0 1rem 0;
+    max-width: 1200px;
+    margin: 0 40px 0 40px;
+    width: 100%;
 }
-
 .NavBar-logo{
-    margin: 10px;
     width: 250px;
     height: 56px;
     background-image: url(../images/logoInfinix.svg);
     background-size: cover;
     background-position: center;
     position: relative;
-    right: 70px;
 }
 
-.NavBar-nav{
-    margin-right: 13px;
+ /*boton escondido*/
+[aria-controls='menu-list']{
+    display: none;
 }
-.navBar-logoInfinix{
+.NavBar-list{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-right: 75px;
+}
+.menu-list{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    max-width: 600px;
     width: 100%;
-    height: 100%;
-    margin-top: 500px;
+}
+
+.NavBar-contain{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    align-items: center;
+    position: relative;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 .textMenu{
     color: #575E89;
@@ -190,19 +227,70 @@ a:hover{
 .Titulo span{
     color: white !important;
 }
-/*Main*/
+/*Media Navbar*/
+
+@media all and (max-width: 824px){
+    .NavBar-list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0px 30px 0px;
+        background-color: white;
+        position: fixed;
+        top: 50px;
+        width: 100%;
+    }
+    .menu-list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        top: 50px;
+    }
+    .menu-list a:hover{
+        border-bottom: 2px solid #364393;
+    }
+    .NavBar-header{
+        padding: 0;
+        max-width: 800px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .NavBar-logo{
+        width: 13rem;
+        top: 10px;
+    }
+
+    /*boton escondido*/
+    [aria-controls='menu-list']{
+        display: flex;
+    }
+    .close{
+        display: none;
+    }
+    /*ANIMAR EN ESCALERA*/
+    .menu-list{
+        display: none;
+    }
+
+}
+/*MAIN*/
 .Main{
     position:absolute;
     display: flex;
-    align-items: center;
-    height: 809px;
-    margin-top: 95px;/*Provisorio*/
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    width: 90%;
+    max-height: 756px;
+    min-height: 720px;
+    height: 100%;
+    margin: 95px 40px 0 40px;
+    padding: 1rem 0 1rem 0;
 }
 
 .Titulo{
-    width: 580px;
-    padding-left: 50px;
-    height: 809px;   
+    width: 22%;
 }
 
 .Titulo h1{
@@ -233,64 +321,63 @@ a:hover{
 }
 
 .Composition{
-    width: 670px;
-    height: 809px;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    position: relative;
+
 }
 .Composition img{
     position: absolute;
-
 }
 .estatua{
-    width: 540px;
-    top: 60px;
-    left: 797px;
+    
+    width: 54% !important;
+    top: -2%;
+    left: 49%;
 }
-
 .fondo{
-    width: 385px;
-    top: 90px;
-    left: 855px;
+    width: 35% !important;
 }
 
 .marmol4{
-    width: 340px;
-    top: 30px;
-    left: 970px;
-
-}
-.marmol3{
-    width: 200px;
-    top: 600px;
-    left: 1100px;
-
-}
-.marmol2{
-    width: 250px;
-    top: 30px;
-    left: 690px;
-}
-.marmol1{
-    width: 190px;
-    top: 250px;
-    left: 630px;
-
+    width: 30% !important;
+    top: -5%;
+    left: 66%;
 }
 .circulo{
-    width: 450px;
-    top: 450px;
-    left: 600px;
+    width: 35% !important;
+    top: 59%;
+    left: 40%;
 }
-
+.marmol3{
+    width: 22% !important;
+    top: 58%;
+    left: 73%;
+}
+.marmol2{
+    width: 23% !important;
+    top: 0%;
+    left: 38%;
+}
+.marmol1{
+    width: 13% !important;
+    top: 38%;
+    left: 45%;
+}
 .star{
     color: red;
     padding: 0 3px 0 3px;
 }
+
 .Service{
-    position: absolute;
-    top: 352px;
-    left: 970px;
+    top: 13px;
     transform: rotate(90deg);
-    height: 138px;
+    width: 10%;
 }
 .containService{
     width: 809px;
@@ -304,14 +391,55 @@ a:hover{
     font-size: 15.8px;
     line-height: 20px;
 }
+@media all and (max-width: 824px){
+    .Main{
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+    } 
+
+    .Composition{
+        position: absolute;
+        /* display: flex; */
+        margin-left: 57px;
+        top: 175px;
+    }
+    .Service{
+        display: none;
+    }
+    .Titulo {
+        width: 55% !important;
+    }
+    .Titulo h1{
+        margin-top: 0px;
+        font-size: 70px;
+        position: relative;
+    }
+    .Titulo h3{
+        font-size: 14px;
+        top: -36px;
+
+    }
+    .Titulo span{
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 1179px){
+    .Titulo {
+        width: 32%;
+    }
+}
+
 /*SOLUTION*/
 .Solutions{
     position:absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 809px;
-    margin-top: 1140px;/*Provisorio*/
+    max-width: 1200px;
+    width: 90%;
+    margin-top: 860px;/* 460Provisorio*/
 }
 .Solutions_title h1{
     text-align: center;
@@ -333,7 +461,6 @@ a:hover{
     line-height: 30.24px;
     margin-block-start: 0 !important;
 }
-
 .textBold{
     color: rgb(255, 255, 255);
     font-family: 'Plus Jakarta Sans';
@@ -349,19 +476,19 @@ a:hover{
     display: flex;
     flex-direction: row;
     gap: 50px;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-start;
     margin-top: 25px;
+    flex-wrap: wrap;
 }
-
 .Solutions_card{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     padding: 56px;
-    width: 244px;
-    height: 298px;    
+    width: 224px;
+    height: 312px;   
     background: rgba(255, 255, 255, 0.2);
     border: 4px solid rgba(255, 255, 255, 0.33);
     backdrop-filter: blur(74px);    
@@ -376,13 +503,11 @@ a:hover{
     font-size: 19.1506px;
     line-height: 24px;
 }
-
 .Solutions_card h2{
     font-size: 42.47px;
     margin-block-end: 0;
     margin-block-start: 0;
 }
-
 .Solutions_title span{
     color: white !important;
 }
@@ -394,12 +519,55 @@ a:hover{
     transform: rotateZ(-0.1deg);
 }
 
+@media all and (max-width: 824px){
+    .Solutions{
+        width: 100%;
+        margin-top: 560px;
+
+    }
+    .Solutions_cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+    }
+    .Solutions_title h1{
+        font-size: 55px;
+    }
+    .Solutions_title h3 {
+        font-size: 16px;
+        top: -36px;
+        line-height: 27.24px;
+    }
+    .Solutions_title span {
+        font-size: 16px;
+    }
+    .Solutions_card{
+        width: 224px;
+        height: 312px;   
+    }
+}
 /*CREATE*/
-.CreateBackground{
+
+.Create{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1865px;
     width: 100%;
+    height: 1909px;
+    margin-top: 1450px;/*Provisorio*/
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);   
+}
+
+.CreateBackground{
+    width: 0%;
     height: 809px;
     margin-top: 1640px;/*Provisorio*/
-    position: absolute;
+    position: fixed;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -407,21 +575,10 @@ a:hover{
     filter: blur(190px);
     top: -729px;
 }
-.Create{
-    position:absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 1865px;
-    height: 809px;
-    margin-top: 1726px;/*Provisorio*/
-    background-color: white;
-}
 .Create_title{
     position: absolute;
-    width: 1253px;
-    height: 1199px;
+    max-width: 1200px;
+    width: 100%;
     top: 305px;
     display: flex;
     flex-direction: column;
@@ -435,7 +592,7 @@ a:hover{
     font-style: normal;
     font-weight: 800;
     font-size: 81px;
-    line-height: 102px;
+    line-height: 90px;
     text-align: center;
     color: #575E89;
 }
@@ -450,7 +607,47 @@ a:hover{
 .line{
     margin-top: 100px;
 }
+@media all and (max-width: 1275px){
+    .Create{
+        margin-top: 1950px;
+    }
+    .Create_title{
+        top: 207px;
+    }
+    .Create_title h1{
+        font-size: 80px;
+        line-height: 100px;
+    }
+    .Create_title h3{
+        font-size: 22px;
+    }
+    .Create_title span{
+        font-size: 22px;
+    }
 
+}
+
+@media all and (max-width: 836px){
+    .Create{
+        margin-top: 2100px;
+    }
+    .Create_title{
+        top: 178px;
+    }
+    .Create_title{
+        top: 207px;
+    }
+    .Create_title h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .Create_title h3{
+        font-size: 10px;
+    }
+    .Create_title span{
+        font-size: 10px;
+    }
+}
 /*CARD RESPONSIVE*/
 .CardRes{
     display: flex;
@@ -487,9 +684,9 @@ a:hover{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
-    justify-content: space-evenly;
-    align-content: flex-end;
-    margin-top: 684px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 178px;
 
 }
 .CardRes h3{
@@ -499,15 +696,18 @@ a:hover{
     font-size: 19.1506px;
     line-height: 24px;
 }
-/*
-*{
-    margin-block-start: 0 !important;
-    margin-block-end: 0 !important;
-    margin-inline-start: 0 !important;
-    margin-inline-end: 0 !important;
+
+@media all and (max-width: 1347px){
+    .CardRes{
+        top: 0px !important ;
+    }
+}
+
+@media all and (max-width: 836px){
 
 }
-*/
+
+
 /*Partners*/
 .Partners{
     display: flex;
@@ -595,14 +795,14 @@ a:hover{
     letter-spacing: 0.02em;
 }
 .Speak_background{
+    max-width: 1400px;
     width: 100%;
-    height: 809px;
     display: flex;
     position: absolute;
     text-align: center;
     flex-direction: column;
     align-items:center;
-    top: 1130px;
+    top: 1323px;
 }
 
 .Speak_background path{
@@ -612,7 +812,7 @@ a:hover{
 
 .Speak_background svg{
     height: 1637px;
-    position: absolute;
+    position: fixed;
     transform: rotate(180deg);
 }
 /*Footer*/
@@ -682,4 +882,23 @@ a:hover{
 }
 .copy span{
     font-size: 18px;
+}
+.open{
+    font-size: 36px;
+    color: #575E89;
+}
+.open:hover{
+    color: #0419a2;
+}
+.close {
+    font-size: 36px;
+    font-weight: 900;
+    fill: #575E89;
+}
+.close:hover{
+    color: #0419a2;
+}
+.menu button{
+    background: #ffffff00;
+    border: none;
 }
