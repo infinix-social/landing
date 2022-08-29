@@ -12,6 +12,7 @@ $primary-fontl
   display: flex;
   justify-content: center;
   /* color: $primary-color; */
+  overflow: hidden;
   position: absolute;
 }
 
@@ -24,10 +25,9 @@ h1{
   color: black;
 }
 .App-header {
-  max-width: 1250px;
+  max-width: 1200px;
   min-width: 375px;
   width: 100%;
-  /* background-color: #ffffff; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;

@@ -12,7 +12,7 @@ class Solutions extends React.Component{
             <div className="Solutions">
                 <div className="Solutions_title">
                     <h1>SOLUTIONS</h1>
-                    <h3 className="textLight"> We are a team of professionals dedicated<br/>to create<span className="textBold"> your notable presence.</span></h3>
+                    <h3> We are a team of professionals dedicated<br/>to create<span className="textBold"> your notable presence.</span></h3>
                 </div>
                 <div className="Solutions_cards">
                     <Card   title="Social" 

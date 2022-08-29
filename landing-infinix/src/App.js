@@ -17,11 +17,8 @@ function App() {
       <header className="App-header">
         <NavBar/>
         <Main/>
-        <Create/>
         <Solutions/>
-        <Partners/>
-        <Speak/>
-        <Footer/>
+        <Create/>
 
       </header>
     </div>
@@ -29,3 +26,9 @@ function App() {
 }
 
 export default App;
+/* 
+        <Create/>
+        <Partners/>
+        <Speak/>
+        <Footer/>
+*/

@@ -13,10 +13,10 @@ class NavBar extends React.Component{
                         </button>
                         <div className="NavBar-list">
                             <ul className="menu-list">
-                                <li ><a className="textMenu" href="google.com">HOME</a></li>
-                                <li ><a className="textMenu" href="google.com">SOLUTION</a></li>
-                                <li ><a className="textMenu" href="#">HOW WE CREATE</a></li>
-                                <li ><a className="textMenu" href="#">CONTACT</a></li>
+                                <li ><a href="google.com">HOME</a></li>
+                                <li ><a href="google.com">SOLUTION</a></li>
+                                <li ><a href="#">HOW WE CREATE</a></li>
+                                <li ><a href="#">CONTACT</a></li>
                             </ul>
                         </div>
 

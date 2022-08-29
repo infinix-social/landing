@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+}
+
 html{
     background-color: #ffc1c1c6; /*Auxiliar*/
 }
@@ -12,30 +16,55 @@ ul{
     display: flex;
 }
 a{
+    color: #575E89;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.8px;
+    line-height: 20px;
+    text-align: center;
     text-decoration: none;
     color: #575E89;
+    gap: 50px;
 }
 a:hover{
     color: rgb(255, 131, 15);
 }
+h3{
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 23px;
+    line-height: 32px;
+}
+h1{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 113.032px;
+    line-height: 100.4%;
+}
+span{
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 23px;
+    line-height: 30.24px;
+}
 /*Background*/
+.contain_Background{
+    display: none;
+}
 .Background{
     display: flex;
-    align-items:center;
-    flex-direction: column;
-    position: fixed;
-    text-align: center;
-    width: 100%;
+    position: absolute;
     filter: blur(190px);
 }
-
 .Background div{
     position: absolute;
 }
 
 .Elipse {
-    position: absolute;
-
     width: 227.82px;
     height: 722.86px;
     left: 398px;
@@ -45,7 +74,6 @@ a:hover{
 }
 
 .Elipse1 {
-    position: absolute;
 
     width: 875.5px;
     height: 965.72px;
@@ -56,7 +84,6 @@ a:hover{
 }
 
 .Elipse2 {
-    position: absolute;
 
     width: 406.82px;
     height: 722.86px;
@@ -67,8 +94,6 @@ a:hover{
 }
 
 .Elipse3 {
-    position: absolute;
-
     width: 227.82px;
     height: 722.86px;
     left: -1254px;
@@ -78,8 +103,6 @@ a:hover{
 }
 
 .Elipse4 {
-    position: absolute;
-
     width:  342.5px;
     height: 368.72px;
     left: 68.80000000000001px;
@@ -88,7 +111,7 @@ a:hover{
     transform: matrix(0.32, 0.94, -0.96, 0.3, 0, 0);
 }
 .Elipse5 {
-    position: absolute;
+    display: none;
 
     width:  574.5px;
     height: 395.72px;
@@ -99,7 +122,7 @@ a:hover{
 }
 
 .Elipse6 {
-    position: absolute;
+    display: none;
 
     width: 476.82px;
     height: 790.86px;
@@ -109,8 +132,7 @@ a:hover{
     transform: matrix(0.32, 0.94, -0.96, 0.3, 0, 0);
 }
 .Elipse7 {
-    position: absolute;
-
+    display: none;
     width: 945.5px;
     height: 287.72px;
     left: 855.8px;
@@ -119,7 +141,6 @@ a:hover{
     transform: matrix(-0.97, -0.03, 0.25, 1, 0, 0);
 }
 .Elipse8 {
-    position: absolute;
 
     width: 227.82px;
     height: 722.86px;
@@ -129,8 +150,7 @@ a:hover{
     transform: matrix(0.32, 0.94, -0.96, 0.3, 0, 0);
 }
 .Elipse9 {
-    position: absolute;
-
+    display: none;
     width:  476.82px;
     height: 691.86px;
     left: 1101.6599999999999px;
@@ -139,7 +159,6 @@ a:hover{
     transform: matrix(0.32, 0.94, -0.96, 0.3, 0, 0);
 }
 .Elipse10 {
-    position: absolute;
 
     width: 218.81999999999994px;
     height: 690.86px;
@@ -149,7 +168,6 @@ a:hover{
     transform: matrix(0.32, 0.94, -0.96, 0.3, 0, 0);
 }
 .Elipse11 {
-    position: absolute;
 
     width: 896.5px;
     height: 81.72000000000003px;
@@ -162,12 +180,9 @@ a:hover{
 /*NavBar*/
 .NavBar-header{
     display: flex;
-    flex-wrap: inherit;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0 1rem 0;
-    max-width: 1200px;
-    margin: 0 40px 0 40px;
     width: 100%;
 }
 .NavBar-logo{
@@ -176,12 +191,18 @@ a:hover{
     background-image: url(../images/logoInfinix.svg);
     background-size: cover;
     background-position: center;
-    position: relative;
 }
 
  /*boton escondido*/
 [aria-controls='menu-list']{
     display: none;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 .NavBar-list{
     display: flex;
@@ -193,7 +214,6 @@ a:hover{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    max-width: 600px;
     width: 100%;
 }
 
@@ -204,32 +224,18 @@ a:hover{
     align-items: center;
     position: relative;
 }
-.menu{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: relative;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-.textMenu{
-    color: #575E89;
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15.8px;
-    line-height: 20px;
-    text-align: center;
-}
-.textMenu:hover{
-    color: #364393;
-}
+
 .Titulo span{
     color: white !important;
 }
 /*Media Navbar*/
 
 @media all and (max-width: 824px){
+    .menu-list{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
     .NavBar-list{
         display: flex;
         flex-direction: column;
@@ -238,22 +244,15 @@ a:hover{
         background-color: white;
         position: fixed;
         top: 50px;
-        width: 100%;
+        width: 90%;
     }
-    .menu-list{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        top: 50px;
+    .NavBar-logo{
+        width: 13rem;
     }
-    .menu-list a:hover{
-        border-bottom: 2px solid #364393;
-    }
+
+
     .NavBar-header{
         padding: 0;
-        max-width: 800px;
-        width: 100%;
-        justify-content: space-between;
         align-items: flex-start;
     }
     .NavBar-logo{
@@ -268,24 +267,17 @@ a:hover{
     .close{
         display: none;
     }
-    /*ANIMAR EN ESCALERA*/
-    .menu-list{
-        display: none;
-    }
 
 }
+
+
 /*MAIN*/
 .Main{
-    position:absolute;
     display: flex;
     align-items: flex-start;
     flex-direction: row-reverse;
-    max-width: 1200px;
-    width: 90%;
-    max-height: 756px;
-    min-height: 720px;
-    height: 100%;
-    margin: 95px 40px 0 40px;
+    width: 95%;
+    height: fit-content;
     padding: 1rem 0 1rem 0;
 }
 
@@ -296,41 +288,18 @@ a:hover{
 .Titulo h1{
     margin-top: 120px;
     color: rgb(255, 255, 255);
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 113.032px;
-    line-height: 100.4%;
-}
-.Titulo h3{
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 1000;
-    font-size: 24px;
-    line-height: 32px;
-    position: relative;
-    top: -55px;
-    left: 12px;
-}
-.Titulo span{
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 100;
-    font-size: 24px;
-    line-height: 30.24px;
 }
 
 .Composition{
-    width: 80%;
+    width: 82%;
     height: 100%;
+    min-height: 10%;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: nowrap;
     justify-content: flex-end;
     position: relative;
 
 }
+/*COMPOSITION*/
 .Composition img{
     position: absolute;
 }
@@ -375,34 +344,31 @@ a:hover{
 }
 
 .Service{
-    top: 13px;
     transform: rotate(90deg);
-    width: 10%;
+    width: 12%;
 }
 .containService{
     width: 809px;
     height: 138px;
 }
-.containService h2{
-    color: #575E89;
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15.8px;
-    line-height: 20px;
+
+@media screen  and (max-width: 1179px){
+
+    .Tiutlo{
+        width: 23%;
+    }
 }
 @media all and (max-width: 824px){
     .Main{
-        width: 80%;
+        width: 94%;
         display: flex;
         justify-content: flex-end;
     } 
 
     .Composition{
         position: absolute;
-        /* display: flex; */
         margin-left: 57px;
-        top: 175px;
+        height: 10%;
     }
     .Service{
         display: none;
@@ -425,70 +391,46 @@ a:hover{
     }
 }
 
-@media all and (max-width: 1179px){
-    .Titulo {
-        width: 32%;
-    }
-}
 
 /*SOLUTION*/
 .Solutions{
-    position:absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1200px;
-    width: 90%;
-    margin-top: 860px;/* 460Provisorio*/
+    width: 100%;
+    height: auto;
+    gap: 60px;
+    padding: 16rem 0 3rem 0;
 }
-.Solutions_title h1{
+
+.Solutions h3{
     text-align: center;
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 81px;
-    line-height: 102px;
-    color: white;
-    margin-bottom: 13px;
 }
-.textLight{
+.Solutions h1{
     color: rgb(255, 255, 255);
     text-align: center;
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 100;
-    font-size: 24px;
-    line-height: 30.24px;
-    margin-block-start: 0 !important;
+    margin: 30px;
+
 }
-.textBold{
-    color: rgb(255, 255, 255);
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 1000;
-    font-size: 24px;
-    line-height: 32px;
-    position: relative;
-}
+
 /*CARD*/
 .Solutions_cards{
-    height: 100%;    
-    display: flex;
-    flex-direction: row;
     gap: 50px;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 25px;
+    height: auto;    
+    display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;   
+    justify-content: center;
 }
 .Solutions_card{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 56px;
-    width: 224px;
-    height: 312px;   
+    padding: 25px 30px 24px 30px;
+    width: 19%;
+    min-width: 240px;
     background: rgba(255, 255, 255, 0.2);
     border: 4px solid rgba(255, 255, 255, 0.33);
     backdrop-filter: blur(74px);    
@@ -497,40 +439,30 @@ a:hover{
 }
 .Solutions_card h3{
     text-align: left !important;
-    font-family: 'Plus Jakarta Sans';
     font-style: normal;
     font-weight: 100;
-    font-size: 19.1506px;
+    font-size: 21px;
     line-height: 24px;
+    padding-left: 10px;
 }
 .Solutions_card h2{
     font-size: 42.47px;
     margin-block-end: 0;
     margin-block-start: 0;
+    padding-left: 10px;
 }
 .Solutions_title span{
     color: white !important;
 }
 .mobile{
     position: relative;
-    right: 50px;
-    width: 132%;
-    top:25px;
+    right: 30px;
+    width: 118%;
+    top: 25px;
     transform: rotateZ(-0.1deg);
 }
 
 @media all and (max-width: 824px){
-    .Solutions{
-        width: 100%;
-        margin-top: 560px;
-
-    }
-    .Solutions_cards{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 25px;
-    }
     .Solutions_title h1{
         font-size: 55px;
     }
@@ -542,48 +474,38 @@ a:hover{
     .Solutions_title span {
         font-size: 16px;
     }
-    .Solutions_card{
-        width: 224px;
-        height: 312px;   
-    }
 }
 /*CREATE*/
 
 .Create{
-    position:absolute;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    max-width: 1865px;
-    width: 100%;
-    height: 1909px;
-    margin-top: 1450px;/*Provisorio*/
-    background: rgb(255,255,255);
+    width: 1865px;
+    height: auto;
+    overflow: hidden;
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);   
 }
 
 .CreateBackground{
-    width: 0%;
-    height: 809px;
-    margin-top: 1640px;/*Provisorio*/
-    position: fixed;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items:center;
+    position:absolute;
+    z-index:0; 
+    margin-top: 2640px;
     filter: blur(190px);
     top: -729px;
 }
 .Create_title{
-    position: absolute;
-    max-width: 1200px;
     width: 100%;
-    top: 305px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    margin-top: 78px;
 }
 
 .Create_title h1{
@@ -638,9 +560,6 @@ a:hover{
 @media all and (max-width: 1275px){
     .line1{
         margin-top: 275px;
-    }
-    .Create{
-        margin-top: 1950px;
     }
     .Create_title{
         top: 300px;
@@ -702,7 +621,7 @@ a:hover{
     border: 3.6899px solid rgba(255, 255, 255, 0.33);
     backdrop-filter: blur(74px) ;
     /* Note: backdrop-filter has minimal browser support */
-    max-height: 300px;
+    height: auto;
     border-radius: 46.97px;
 }
 
@@ -718,15 +637,15 @@ a:hover{
 }
 
 .Roadmap{
-    height: 3048px;
+    width: 70%;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
     align-content: center;
-    margin-top: 178px;
-
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 341px;
+    position: absolute;
 }
 .CardRes h3{
     font-family: 'Plus Jakarta Sans';
@@ -853,15 +772,14 @@ a:hover{
 /*SPEAK*/
 .Speak{
     display: flex;
-    position: absolute;
+    position: relative;
     flex-direction: row;
     justify-content: center;
-    max-width: 1200px;
     width: 100%;
     gap: 12rem;
     margin-top: 3720px;
-
-
+    background-color: white;
+    overflow: auto;
 }
 .Speak_title{
     display: flex;
@@ -888,7 +806,6 @@ a:hover{
     letter-spacing: 0.02em;
 }
 .Speak_background{
-    max-width: 1400px;
     width: 100%;
     display: flex;
     position: absolute;
@@ -897,22 +814,27 @@ a:hover{
     align-items:center;
     top: 1323px;
 }
+.Speak_background svg{
+    height: 1637px;
+    position: absolute;
+    transform: rotate(180deg);
+}
 
 .Speak_background path{
     fill: white;
     /*    filter: drop-shadow(-18px 35px 40px rgb(0 0 0 / 0.2));*/
 }
 
-.Speak_background svg{
-    height: 1637px;
-    position: fixed;
-    transform: rotate(180deg);
-}
+
 
 @media all and (max-width: 1275px){
     .Speak{
         gap: 0;
         margin-top: 4300px;/*Provisorio*/
+    }
+    .Speak_background{
+
+        top: 1350px;
     }
 }
 @media all and (max-width: 836px){
@@ -925,6 +847,10 @@ a:hover{
     .Speak_title h3{
 
         font-size: 16px;
+    }
+    .Speak_background{
+
+        top: 2150px;
     }
 }
 /*Footer*/
@@ -964,17 +890,8 @@ a:hover{
     align-items: flex-start;
 }
 
-.Footer_links h3, span{
-    color: #575E89;
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 200%;
-}
-.Footer_links span{
-    font-size: 18px;
-}
+
+
 .Footer_social{
     display: flex;
     align-items: flex-start;
@@ -987,14 +904,7 @@ a:hover{
     align-items: center;
     justify-content: center;
 }
-.copy h3, span{
-    color: #575E89;
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 200%;
-}
+
 .copy span{
     font-size: 18px;
 }
