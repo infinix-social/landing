@@ -19,16 +19,12 @@ function App() {
         <Main/>
         <Solutions/>
         <Create/>
-
+        <Partners/>
+        <Speak/>
+        <Footer/>
       </header>
     </div>
   );
 }
 
 export default App;
-/* 
-        <Create/>
-        <Partners/>
-        <Speak/>
-        <Footer/>
-*/
