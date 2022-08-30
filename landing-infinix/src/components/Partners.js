@@ -14,7 +14,7 @@ class Partners extends React.Component{
             <div className="Partners">
                 <div className="Partners_title">
                     <h1>PARTNERS</h1>
-                    <h3 className="textLight">Not only who we are, also,<span className="textBold"> who do we <br/>work with?</span></h3>
+                    <h3 className="textLight">Everything is about working together.<span className="textBold"> So we choose to work with some of this guys.</span></h3>
                 </div>
                 <div className="Partners_logos">
                     <div className="logos">

@@ -15,7 +15,7 @@ class Main extends React.Component{
             <div className="Main">
                 <div className="Service">
                     <div className="containService">
-                        <h2><a href="#">DESIGN AND SOCIAL</a><img className="star" src={Star}></img><a href="#">DIGITAL MARKETING</a> <img className="star" src={Star}></img><a href="#">SOCIAL MEDIA</a><img className="star" src={Star}></img><a href="#">WEB DEVELOPMENT</a></h2>
+                        <h2><a href="#">DESIGN AND SOCIAL COM</a><img className="star" src={Star}></img><a href="#">DIGITAL MARKETING</a> <img className="star" src={Star}></img><a href="#">SOCIAL MEDIA</a><img className="star" src={Star}></img><a href="#">WEB DEVELOPMENT</a></h2>
                     </div>
                 </div>
                 <div className="Composition">

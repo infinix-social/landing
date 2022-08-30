@@ -8,11 +8,9 @@ class Speak extends React.Component{
             <div className="Speak">
                 <div className="Speak_title">
                 <h1>LETS SPEAK !</h1>
-                <h3 className="textLight">We are waiting to know more about you! 😃</h3>
+                <h3 className="textLight">We both want to know each other! 😃</h3>
                 </div>
-
             </div>    
-   
         )
     }
 }

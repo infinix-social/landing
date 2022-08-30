@@ -10,15 +10,9 @@ class Create extends React.Component{
     render(){
         return(
             <div className="Create">
-                <div className="CreateBackground">
-                    <div className='Elipse5'></div>
-                    <div className='Elipse6'></div>
-                    <div className='Elipse7'></div>
-                    <div className='Elipse9'></div>
-                </div>
                 <div className="Create_title">
                     <h1>HOW WE CREATE<br/> MASTERPIECES</h1>
-                    <h3 className="textLight"> <span className="textBold"> Step by step</span>, from nowhere to create<span className="textBold"> Inifinix</span></h3>
+                    <h3 className="textLight"> <span className="textBold"> Step by step</span>, from nowhere to<span className="textBold"> Inifinix</span></h3>
                     <img className="line" src={Line}></img>
                     <img className="line1" src={Line1}></img>
                     <img className="line2" src={Line2}></img>
@@ -33,29 +27,36 @@ class Create extends React.Component{
                     <CardRes 
                         top="121"
                         title=" 🎯 Find out your necessities"
-                        text=" High-end web, webapps, web3, marketplaces developments. Including industries like finance, science, production, and more."
+                        text=" Every one has a pain-point. We have a proven protocol to understand both, yours & your clients, so we can develop something unique (and awesome). "
                     />
                     <CardRes 
                         top="18"
                         title=" 🏃‍♂️ We develop fit sized solutions"
-                        text=" It has to be for you and it has to be usefull. Otherwise, it requires a step back."
+                        text=" It has to be for you and it has to be usefull. 
+                        Otherwise, it requires a step back.
+                        So, validating our strategy with you is a must."
                     />
                     <CardRes 
                         top="120"
                         title=" 😎 We make it look cool"
-                        text=" Our team may not be the hughest, but it’s the coolest in town. That’s how we ensure to generate a glance back."
+                        text=" Our team may not be the hughest, but it’s the coolest in town. 
+                        That’s how we ensure to generate a glance back, whenever your customers arrive at your portal."
                     />
                     <CardRes 
                         top="38"
-                        title=" ☕️ Data science starts drinking coffee"
-                        text=" Let that part to them, they are experts, and nerds..."
+                        title=" ☕️ Time to watch, understand and optimize"
+                        text=" Data mindset is one of our values. That’s how we ensure
+                        to quickly re-do and evolve our strategy."
                     />
                     <CardRes 
                         top="186"
-                        title=" ☕️ Data science starts drinking coffee"
-                        text=" Let that part to them, they are experts, and nerds..."
+                        title=" 💎️ The red X has been detected"
+                        text="Oh, holy grail! We can finally say that we spot how to
+                        scale it, and now it’s time to make it a growth machine.
+                        (and claim your rewards 💰)"
                     />
                 </div>
+
 
             </div>    
         )

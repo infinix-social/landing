@@ -15,32 +15,23 @@ class Solutions extends React.Component{
                     <h3> We are a team of professionals dedicated<br/>to create<span className="textBold"> your notable presence.</span></h3>
                 </div>
                 <div className="Solutions_cards">
-                    <Card   title="Social" 
+                    <Card   title="Social<br/>" 
                             emoji={Nail} 
                             imagen={Mobile} 
-                            text="High-end web, webapps,
-                                  web3, marketplaces 
-                                  developments. Including 
-                                  industries like finance, 
-                                  science, production, and more."
+                            text="It’s not about creating content, but creating a tribe.
+                            We’re fans of human relationships and how the mind works. Let’s prove it  ⚡"
                     />
                     <Card   title="ADS" 
                             emoji={Death} 
                             imagen={Mobile} 
-                            text="High-end web, webapps,
-                                  web3, marketplaces 
-                                  developments. Including 
-                                  industries like finance, 
-                                  science, production, and more."
+                            text="Growing, selling, getting in touch, branding, or whatever your current objective is, 
+                            we have some ninjas to make it happen  🥷"
                     />
-                    <Card   title="Web 3.0"
+                    <Card   title="Web 2 and 3.0 🦄 "
                             emoji={Fire}
                             imagen={Mobile}
-                            text="High-end web, webapps,
-                                  web3, marketplaces 
-                                  developments. Including 
-                                  industries like finance, 
-                                  science, production, and more."
+                            text="Do you need an approach to your clients but with a new look?
+                            Our developers love challenges, what’s on your mind?  🚀"
                     />
                 </div>     
             </div>    
