@@ -1,4 +1,7 @@
-*{
+*,
+*:before,
+*:after{
+    box-sizing: inherits;
     margin: 0;
 }
 
