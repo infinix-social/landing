@@ -6,21 +6,14 @@ class Background extends React.Component{
         return(
             <div className="contain_Background">
                 <div className="Background">
-                    <div className='Elipse'></div>
-                    <div className='Elipsee'></div>
-                    <div className='Elipse1'></div>
-                    <div className='Elipse2'></div>
-                    <div className='Elipse3'></div>
-                    <div className='Elipse8'></div>
-                </div>
-                <div className="CreateBackground">
-                    <div className='Elipse5'></div>
-                    <div className='Elipse51'></div>
-                    <div className='Elipse6'></div>
-                    <div className='Elipse61'></div>
-                    <div className='Elipse62'></div>
-                    <div className='Elipse7'></div>
-                    <div className='Elipse9'></div>
+                    <div className='fondoNaranja1'></div>
+                    <div className='fondoVioleta1'></div>
+                    <div className='fondoNaranja2'></div>
+                    <div className='fondoVioleta2'></div>
+                    <div className='fondoNaranja2'></div>
+                    <div className='fondoVioleta2'></div>
+                    <div className='fondoNaranja3'></div>
+                    <div className='fondoVioleta3'></div>
                 </div>
                 <div className="Speak_background">
                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 220">
@@ -32,3 +25,20 @@ class Background extends React.Component{
     }
 }
 export default Background;
+/*
+
+                <div className="Background">
+                    <div className='Elipse'></div>
+                    <div className='Elipsee'></div>
+                    <div className='Elipse1'></div>
+                    <div className='Elipse2'></div>
+                    <div className='Elipse3'></div>
+                    <div className='Elipse8'></div>
+                    <div className='Elipse5'></div>
+                    <div className='Elipse51'></div>
+                    <div className='Elipse6'></div>
+                    <div className='Elipse61'></div>
+                    <div className='Elipse62'></div>
+                    <div className='Elipse7'></div>
+                    <div className='Elipse9'></div>
+                </div>*/
