@@ -15,7 +15,7 @@ class Main extends React.Component{
             <div className="Main">
                 <div className="Service">
                     <div className="containService">
-                        <h2><a href="#">DESIGN AND SOCIAL COM</a><img className="star" src={Star}></img><a href="#">DIGITAL MARKETING</a> <img className="star" src={Star}></img><a href="#">SOCIAL MEDIA</a><img className="star" src={Star}></img><a href="#">WEB DEVELOPMENT</a></h2>
+                        <h2>DESIGN AND SOCIAL COM<img className="star" src={Star}></img>DIGITAL MARKETING<img className="star" src={Star}></img>SOCIAL MEDIA<img className="star" src={Star}></img>WEB DEVELOPMENT</h2>
                     </div>
                 </div>
                 <div className="Composition">
@@ -29,7 +29,7 @@ class Main extends React.Component{
                 </div>
                 <div className="Titulo">
                     <h1>SOCIAL+<br/>MKTNG+<br/>CODE</h1>
-                    <h3>Empower your brand<span> with powerfull</span><br/>Social / Media Partner</h3>
+                    <h3>Empower your brand<span> with powerfull a</span><br/>Social / Media Partner</h3>
                 <div className='button'></div>
                 </div>
 

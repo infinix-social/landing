@@ -38,7 +38,7 @@ h1{
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 800;
-    font-size: 113.032px;
+    font-size: 81px;
     line-height: 100.4%;
 }
 
@@ -140,6 +140,24 @@ span{
     background: #9C51B6;
     transform: matrix(0.32, 0.94, -0.96, 0.3, 0, 0);
 }
+.Elipse61 {
+    position: absolute;
+    width: 476.82px;
+    height: 790.86px;
+    left: -354px;
+    top: 3383px;
+    background: #9C51B6;
+    transform: matrix(0.32, 0.94, -0.96, 0.3, 0, 0);
+}
+.Elipse62{
+    position: absolute;
+    width: 476.82px;
+    height: 790.86px;
+    left: -317px;
+    top: 4112px;
+    background: #9C51B6;
+    transform: matrix(0.32, 0.94, -0.96, 0.3, 0, 0);
+}
 .Elipse7 {
     position: absolute;
     width: 653.5px;
@@ -225,7 +243,17 @@ span{
     align-items: flex-end;
     width: 100%;
 }
-
+.menu svg{
+    height: 1.5em;
+    color: #FAFBFB;
+}
+.menu svg:hover{
+    height: 1.5em;
+    color: rgb(255, 131, 15);
+}
+.menu svg > path{
+    filter: drop-shadow(0px 0px 180px rgba(47, 47, 47, 0.48));
+}
 .NavBar-contain{
     display: flex;
     flex-wrap: wrap;
@@ -262,7 +290,8 @@ span{
 
     .NavBar-header{
         padding: 0;
-        align-items: flex-start;
+        padding: 10px 24px 0 0;
+
     }
     .NavBar-logo{
         width: 13rem;
@@ -276,6 +305,14 @@ span{
     .close{
         display: none;
     }
+    .Elipsee {
+        width: 550px;
+        height: 1075px;
+        left: -141px;
+        top: 415px;
+        background: #9C51B6;
+        transform: matrix(0.32, 0.94, -0.96, 0.3, 0, 0);
+    }
 
 }
 
@@ -287,7 +324,7 @@ span{
     flex-direction: row-reverse;
     width: 95%;
     height: fit-content;
-    padding: 1rem 0 1rem 0;
+    /* padding: 1rem 0 1rem 0; */
 }
 
 .Titulo{
@@ -297,12 +334,13 @@ span{
 .Titulo h1{
     margin-top: 120px;
     color: rgb(255, 255, 255);
+    font-size: 113px;
 }
 
 .Composition{
     width: 82%;
     height: 100%;
-    min-height: 10%;
+    min-height: 5%;
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -319,7 +357,7 @@ span{
     left: 49%;
 }
 .fondo{
-    width: 35% !important;
+    width: 45% !important;
 }
 
 .marmol4{
@@ -359,8 +397,16 @@ span{
 .containService{
     width: 809px;
     height: 138px;
+    margin-top: -40px;
 }
-
+.containService h2{
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.8px;
+    line-height: 20px;
+    color: #575e8978;
+}
 @media screen  and (max-width: 1179px){
 
     .Tiutlo{
@@ -377,7 +423,7 @@ span{
     .Composition{
         position: absolute;
         margin-left: 57px;
-        height: 10%;
+        height: 5%;
     }
     .Service{
         display: none;
@@ -409,7 +455,7 @@ span{
     width: 100%;
     height: auto;
     gap: 60px;
-    padding: 16rem 0 3rem 0;
+    padding: 10rem 0 3rem 0;
 }
 
 .Solutions h3{
@@ -428,7 +474,6 @@ span{
     width: 100%;
     height: auto;    
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;   
     justify-content: center;
@@ -438,14 +483,16 @@ span{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 25px 30px 24px 30px;
-    width: 19%;
+    padding: 25px 30px;
+    gap:30px;
+    width: 28%;
+    height: auto;
     min-width: 240px;
+    backdrop-filter: blur(3.5px);    
+    border-radius: 46.97px;
     background: rgba(255, 255, 255, 0.2);
     border: 4px solid rgba(255, 255, 255, 0.33);
-    backdrop-filter: blur(74px);    
-    border-radius: 46.97px;
-    filter: drop-shadow(-10px 24.92px 65.88px rgba(0, 0, 0, 0.27));
+     filter: drop-shadow(-10px 24.92px 65.88px rgba(0, 0, 0, 0.27));
 }
 .Solutions_card h3{
     text-align: left !important;
@@ -471,7 +518,11 @@ span{
     top: 25px;
     transform: rotateZ(-0.1deg);
 }
-
+@media all and (max-width: 1348px){
+    .Solutions_cards{
+        flex-wrap: wrap;
+    }
+}
 @media all and (max-width: 824px){
     .Solutions_title h1{
         font-size: 55px;
@@ -569,7 +620,7 @@ span{
         display: block;
      }
      .Roadmap{
-        margin-top: -555px;
+        margin-top: -604px;
     }
 }
 @media all and (max-width: 1275px){
@@ -611,18 +662,21 @@ span{
 }
 /*CARD RESPONSIVE*/
 .CardRes{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    padding: 10px  31px;
-    gap: 12px;
+    justify-content: flex-start;
+    padding: 25px  30px;
+    gap: 30px;
     max-width: 500px;
-    background: rgba(255, 255, 255, 0.2);
-    border: 3.6899px solid rgba(255, 255, 255, 0.33);
-    backdrop-filter: blur(74px) ;
+    width: auto;
+    height: fit-content;
+    backdrop-filter: blur(3.5px) ;
     border-radius: 46.97px;
-    height: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border: 4px solid rgba(255, 255, 255, 0.33);
+     filter: drop-shadow(-10px 24.92px 65.88px rgba(0, 0, 0, 0.27));
 }
 
 .CardRes_title{
@@ -769,6 +823,7 @@ span{
     letter-spacing: 0.02em;
     color: #575E89;
     font-weight: 100;
+    font-size: 20px;
 }
      
 .Speak_background{
@@ -777,7 +832,7 @@ span{
     text-align: center;
     flex-direction: column;
     align-items:center;
-    top: 2500px;
+    top: 2750px;
 }
 .Speak_background svg{
     height: 1637px;
@@ -792,13 +847,13 @@ span{
 
 @media all and (max-width: 1348px){
     .Speak_background{
-        top:2450px;
+        top:3150px;
     }
 }
 
 @media all and (max-width: 1275px){
     .Speak_background{
-        top:3000px;
+        top:3750px;
     }
     .Speak{
         margin-top: 350px;/*Provisorio*/
@@ -807,21 +862,30 @@ span{
 
 @media all and (max-width: 1014px){
     .Speak_background{
-        top:3600px;
+        top:3950px;
     }
 }
-
 @media all and (max-width: 836px){
     .Speak_background{
-        top:4000px;
+        top:4800px;
+    }
+}
+@media all and (max-width: 824px){
+    .Speak_background{
+        top:4400px;
     }
     .Speak_title h1{
         font-size: 50px;
     }
 }
+@media all and (max-width: 686px){
+    .Speak_background{
+        top:4550px;
+    }
+}
 @media all and (max-width: 665px){
     .Speak_background{
-        top:4400px;
+        top:4850px;
     }
 }
 /*Footer*/
@@ -860,7 +924,7 @@ span{
     align-items: flex-start;
 }
 
-.textBold{
+.footerBold{
     font-weight: 800;
     font-size: 16px;
 }
@@ -871,6 +935,7 @@ span{
     justify-content: center;
     width: 100%;
     gap: 30px;
+    padding-top: 10px;
 }
 .copy{
     display: flex;
@@ -882,7 +947,8 @@ span{
     font-size: 18px;
 }
 .open{
-    font-size: 36px;
+    width: 20px;
+    filter: invert(1);
     color: #575E89;
 }
 .open:hover{
@@ -900,7 +966,13 @@ span{
     background: #ffffff00;
     border: none;
 }
-
+.socialIcon{
+    width: 30px;
+}
+.copy h3{
+    color: #575E89;
+    font-size: 18px;
+}
 @media all and (max-width: 1275px){
     .links{
         flex-direction: column;
@@ -912,17 +984,27 @@ span{
         justify-content: space-between;
         padding-top: 40px;
     }
+    .Elipse51{
+        position: absolute;
+        width: 574.5px;
+        height: 695px;
+        left: 617px;
+        top: 3534px;
+        background: rgb(255, 131, 15);
+        transform: matrix(-0.97, -0.03, 0.25, 1, 0, 0);
+    }
 }
 @media all and (max-width: 1014px){
 
 }
 @media all and (max-width: 836px){
     .Footer{
-        margin-top: 5250px;
+        margin-top: 100px;
     }
     .links{
         flex-direction: column;
         align-items: flex-start;
+        gap: 30px;
     }
     .Footer_links h3{
         font-size: 14px;

@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-      <Background/>
+        <Background/>
       <header className="App-header">
         <NavBar/>
         <Main/>

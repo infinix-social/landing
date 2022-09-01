@@ -1,5 +1,7 @@
 import React from "react";
 import "../Assets/css/style.css"; 
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { faUser} from '@fortawesome/free-solid-svg-icons'
 
 class NavBar extends React.Component{
     render(){
@@ -8,18 +10,13 @@ class NavBar extends React.Component{
                     <div className="NavBar-logo"></div>
                     <nav className="menu">
                         <button aria-expanded="false" aria-controls="menu-list">
-                            <a href="#"><span className="open">&#9776;</span></a>
-                            <a href="#"><span className="close">&#9747;</span></a>
+                            <a href="mailto:infinixSocial@infinixsm.shop"><FontAwesomeIcon icon={faUser} /></a>
                         </button>
                         <div className="NavBar-list">
                             <ul className="menu-list">
-                                <li ><a href="google.com">HOME</a></li>
-                                <li ><a href="google.com">SOLUTION</a></li>
-                                <li ><a href="#">HOW WE CREATE</a></li>
-                                <li ><a href="#">CONTACT</a></li>
+                                <li ><a href="mailto:infinixSocial@infinixsm.shop">CONTACT</a></li>
                             </ul>
                         </div>
-
                     </nav>
                 </div>
         )

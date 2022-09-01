@@ -20,36 +20,36 @@ class Create extends React.Component{
                 </div>
                 <div className="Roadmap">
                     <CardRes 
-                        top="26"
+                        top="-51"
                         title=" 🤝 We know each other"
                         text=" Just like every great relationship, we start with empathy and a huge smile :)"
                     />
                     <CardRes 
-                        top="121"
+                        top="48"
                         title=" 🎯 Find out your necessities"
                         text=" Every one has a pain-point. We have a proven protocol to understand both, yours & your clients, so we can develop something unique (and awesome). "
                     />
                     <CardRes 
-                        top="18"
+                        top="-130"
                         title=" 🏃‍♂️ We develop fit sized solutions"
                         text=" It has to be for you and it has to be usefull. 
                         Otherwise, it requires a step back.
                         So, validating our strategy with you is a must."
                     />
                     <CardRes 
-                        top="120"
+                        top="57"
                         title=" 😎 We make it look cool"
                         text=" Our team may not be the hughest, but it’s the coolest in town. 
                         That’s how we ensure to generate a glance back, whenever your customers arrive at your portal."
                     />
                     <CardRes 
-                        top="38"
+                        top="-129"
                         title=" ☕️ Time to watch, understand and optimize"
                         text=" Data mindset is one of our values. That’s how we ensure
                         to quickly re-do and evolve our strategy."
                     />
                     <CardRes 
-                        top="186"
+                        top="22"
                         title=" 💎️ The red X has been detected"
                         text="Oh, holy grail! We can finally say that we spot how to
                         scale it, and now it’s time to make it a growth machine.

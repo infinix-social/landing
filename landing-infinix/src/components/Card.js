@@ -5,7 +5,7 @@ class Card extends React.Component{
     render(){
         return(
             <div className="Solutions_card">
-                <h2>{this.props.title}<img className="star" src={this.props.emoji}></img></h2>
+                <h2>{this.props.title}</h2>
                 <h3> {this.props.text}</h3>
                 <img className="mobile" src={this.props.imagen}></img>
             </div>       
