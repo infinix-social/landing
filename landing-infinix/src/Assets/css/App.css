@@ -12,8 +12,8 @@ $primary-fontl
   display: flex;
   justify-content: center;
   /* color: $primary-color; */
-  overflow: hidden;
   position: absolute;
+  overflow: hidden;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -34,7 +34,7 @@ h1{
   justify-content: flex-start;
   align-items: center;
   color: white;
-  gap:40px
+  gap:40px;
 }
 
 .App-link {
