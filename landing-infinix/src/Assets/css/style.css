@@ -69,7 +69,7 @@ span{
 }
 
 /*Background*/
-.contain_Background{
+/* .contain_Background{
     z-index: -1;
     height: -webkit-fill-available;
     position: absolute;
@@ -91,6 +91,53 @@ span{
 .bgMain{
     position: relative;
     margin-top: -310px;
+}
+.bgMain img{
+    position: relative;
+
+}
+.bgSolution{
+    position: relative;
+    margin-top: -10px;
+}
+.bgCreate{
+    position: relative;
+}
+.dis{
+    display: none;
+}
+
+
+@media all and (max-width: 1275px){
+
+}
+
+@media all and (max-width: 824px){
+    .dis{
+        display: block;
+    }
+} */
+
+.contain_Background{
+    height:auto;
+    max-width: 100%;
+    position: relative;
+}
+.contain_Background div{
+    min-width: 1200px;
+    min-height: 1000px;
+}
+.background-bgMain{
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    height: 100px;
+    width: 100%;
+}
+.bgMain{
+    position: relative;
+    /* margin-top: -310px; */
 }
 .bgMain img{
     position: relative;

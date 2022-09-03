@@ -38,7 +38,7 @@ function App() {
           <ClipLoader loading={loading} cssOverride={override}  size={150} />
         </div>
         ) : (
-        <header className="App-header">
+          <header className="App-header">
           <Background/>
           <NavBar/>
           <Main/>
